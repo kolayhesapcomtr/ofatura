@@ -434,13 +434,13 @@ export default function Home() {
       <section className="bg-gradient-to-r from-primary to-primary-700 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Hemen Başlayın, 14 Gün Ücretsiz Deneyin
+            Hemen Başlayın, Tamamen Ücretsiz!
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Kredi kartı gerektirmez. İstediğiniz zaman iptal edebilirsiniz.
+            Aylık 5 fatura ile ücretsiz kullanın. Kredi kartı gerektirmez, kurulum yok.
           </p>
           <button className="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition shadow-xl">
-            Ücretsiz Denemeyi Başlat
+            Ücretsiz Hesap Oluştur
           </button>
         </div>
       </section>

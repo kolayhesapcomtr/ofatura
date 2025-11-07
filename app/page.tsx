@@ -278,97 +278,52 @@ export default function Home() {
       <section id="paketler" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Paketlerimiz</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Fiyatlandırma</h2>
             <p className="text-xl text-gray-600">
-              İşletmenizin büyüklüğüne uygun paketi seçin
+              İhtiyacınıza uygun paketi seçin ve hemen başlayın
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Starter Package */}
+            {/* Free Package */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Başlangıç</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Ücretsiz</h3>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">₺299</span>
+                <span className="text-4xl font-bold text-gray-900">₺0</span>
                 <span className="text-gray-600">/ay</span>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">500 Fatura/Ay</span>
+                  <span className="text-gray-600">5 Fatura/Ay</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">GİB Entegrasyonu</span>
+                  <span className="text-gray-600">Müşteri Kaydı</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">E-posta Desteği</span>
+                  <span className="text-gray-600">Ürün Kaydı</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Temel Raporlar</span>
+                  <span className="text-gray-600">Fatura Geçmişi</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">1 Kullanıcı</span>
+                  <span className="text-gray-600">PDF/ZIP İndirme</span>
                 </li>
               </ul>
               <button className="w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-                Başla
+                Ücretsiz Başla
               </button>
             </div>
 
-            {/* Professional Package */}
-            <div className="bg-white rounded-xl p-8 shadow-xl border-2 border-primary relative transform scale-105">
-              <div className="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-semibold">
-                Popüler
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Profesyonel</h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-primary">₺599</span>
-                <span className="text-gray-600">/ay</span>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">2,000 Fatura/Ay</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">GİB Entegrasyonu</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Öncelikli Destek</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Gelişmiş Raporlar</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">5 Kullanıcı</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Toplu Fatura</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Excel Export</span>
-                </li>
-              </ul>
-              <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-600 transition">
-                Başla
-              </button>
-            </div>
-
-            {/* Enterprise Package */}
+            {/* Monthly Package */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Kurumsal</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Aylık</h3>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">₺1,499</span>
+                <span className="text-4xl font-bold text-gray-900">₺250</span>
                 <span className="text-gray-600">/ay</span>
               </div>
               <ul className="space-y-4 mb-8">
@@ -378,35 +333,97 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">GİB Entegrasyonu</span>
+                  <span className="text-gray-600">Müşteri Kaydı</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">7/24 Özel Destek</span>
+                  <span className="text-gray-600">Ürün Kaydı</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Tüm Raporlar</span>
+                  <span className="text-gray-600">Fatura Geçmişi</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Sınırsız Kullanıcı</span>
+                  <span className="text-gray-600">PDF/ZIP İndirme</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Özel Entegrasyon</span>
+                  <span className="text-gray-600">Toplu Fatura İşlemleri</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">Eğitim & Danışmanlık</span>
+                  <span className="text-gray-600">Ayrıntılı Raporlar</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-600">SLA Garantisi</span>
+                  <span className="text-gray-600">E-Posta Desteği</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Logo ve Kaşe/İmza Ekleme</span>
                 </li>
               </ul>
               <button className="w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-                İletişime Geç
+                Aylık Paketi Seç
+              </button>
+            </div>
+
+            {/* Yearly Package */}
+            <div className="bg-white rounded-xl p-8 shadow-xl border-2 border-primary relative transform scale-105">
+              <div className="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-semibold">
+                %50 İndirim
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Yıllık</h3>
+              <div className="mb-6">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-4xl font-bold text-primary">₺1.500</span>
+                  <span className="text-gray-600">/yıl</span>
+                </div>
+                <div className="text-sm text-gray-500 mt-1">
+                  Aylık <span className="line-through">₺250</span> → <span className="text-green-600 font-semibold">₺125</span>
+                </div>
+              </div>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Sınırsız Fatura</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Müşteri Kaydı</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Ürün Kaydı</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Fatura Geçmişi</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">PDF/ZIP İndirme</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Toplu Fatura İşlemleri</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Ayrıntılı Raporlar</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">E-Posta Desteği</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Logo ve Kaşe/İmza Ekleme</span>
+                </li>
+              </ul>
+              <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-600 transition">
+                Yıllık Paketi Seç
               </button>
             </div>
           </div>

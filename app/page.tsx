@@ -40,8 +40,9 @@ export default function Home() {
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <nav className="flex space-x-8">
+                <a href="#" className="text-gray-700 hover:text-primary transition">Anasayfa</a>
                 <a href="#ozellikler" className="text-gray-700 hover:text-primary transition">Özellikler</a>
-                <a href="#paketler" className="text-gray-700 hover:text-primary transition">Paketler</a>
+                <a href="#paketler" className="text-gray-700 hover:text-primary transition">Fiyatlar</a>
                 <a href="#iletisim" className="text-gray-700 hover:text-primary transition">İletişim</a>
               </nav>
               <div className="flex items-center space-x-4">
@@ -66,29 +67,36 @@ export default function Home() {
           {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
-              <nav className="flex flex-col space-y-4 pt-4">
+              <nav className="flex flex-col pt-4">
+                <a
+                  href="#"
+                  className="text-gray-700 hover:text-primary transition py-3 border-b border-gray-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Anasayfa
+                </a>
                 <a
                   href="#ozellikler"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-gray-700 hover:text-primary transition py-3 border-b border-gray-200"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Özellikler
                 </a>
                 <a
                   href="#paketler"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-gray-700 hover:text-primary transition py-3 border-b border-gray-200"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Paketler
+                  Fiyatlar
                 </a>
                 <a
                   href="#iletisim"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-gray-700 hover:text-primary transition py-3 border-b border-gray-200"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   İletişim
                 </a>
-                <div className="flex flex-col space-y-3 pt-4 border-t border-gray-200">
+                <div className="flex flex-col space-y-3 pt-4">
                   <button className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-2 rounded-lg font-medium transition">
                     Giriş Yap
                   </button>

@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import {
   FileText,
   Zap,
@@ -10,17 +13,21 @@ import {
   HeadphonesIcon,
   Mail,
   Phone,
-  MapPin
+  MapPin,
+  Menu,
+  X
 } from "lucide-react";
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-3">
+            {/* Logo */}
+            <a href="#" className="flex items-center space-x-3">
               <Image
                 src="/ofatura/oFatura.png"
                 alt="oFatura Logo"
@@ -28,16 +35,70 @@ export default function Home() {
                 height={77}
                 className="w-60 h-auto"
               />
+            </a>
+
+            {/* Desktop Menu */}
+            <div className="hidden md:flex items-center space-x-8">
+              <nav className="flex space-x-8">
+                <a href="#ozellikler" className="text-gray-700 hover:text-primary transition">Özellikler</a>
+                <a href="#paketler" className="text-gray-700 hover:text-primary transition">Paketler</a>
+                <a href="#iletisim" className="text-gray-700 hover:text-primary transition">İletişim</a>
+              </nav>
+              <div className="flex items-center space-x-4">
+                <button className="text-gray-700 hover:text-primary font-medium transition">
+                  Giriş Yap
+                </button>
+                <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
+                  Kayıt Ol
+                </button>
+              </div>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#ozellikler" className="text-gray-700 hover:text-primary transition">Özellikler</a>
-              <a href="#paketler" className="text-gray-700 hover:text-primary transition">Paketler</a>
-              <a href="#iletisim" className="text-gray-700 hover:text-primary transition">İletişim</a>
-            </nav>
-            <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
-              Hemen Başla
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-gray-700"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+              <nav className="flex flex-col space-y-4 pt-4">
+                <a
+                  href="#ozellikler"
+                  className="text-gray-700 hover:text-primary transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Özellikler
+                </a>
+                <a
+                  href="#paketler"
+                  className="text-gray-700 hover:text-primary transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Paketler
+                </a>
+                <a
+                  href="#iletisim"
+                  className="text-gray-700 hover:text-primary transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  İletişim
+                </a>
+                <div className="flex flex-col space-y-3 pt-4 border-t border-gray-200">
+                  <button className="text-gray-700 hover:text-primary font-medium transition text-left">
+                    Giriş Yap
+                  </button>
+                  <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
+                    Kayıt Ol
+                  </button>
+                </div>
+              </nav>
+            </div>
+          )}
         </div>
       </header>
 

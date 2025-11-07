@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   FileText,
   Zap,
@@ -19,9 +20,14 @@ export default function Home() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-2">
-              <FileText className="w-8 h-8 text-primary" />
-              <span className="text-2xl font-bold text-primary">oFatura</span>
+            <div className="flex items-center space-x-3">
+              <Image
+                src="/ofatura/oFatura.png"
+                alt="oFatura Logo"
+                width={150}
+                height={40}
+                className="h-10 w-auto"
+              />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#ozellikler" className="text-gray-700 hover:text-primary transition">Özellikler</a>
@@ -72,8 +78,14 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="h-4 bg-gray-200 rounded w-3/4"></div>
                   <div className="h-4 bg-gray-200 rounded w-1/2"></div>
-                  <div className="h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg flex items-center justify-center">
-                    <FileText className="w-16 h-16 text-primary" />
+                  <div className="h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg flex items-center justify-center p-4">
+                    <Image
+                      src="/ofatura/icon-oFatura.png"
+                      alt="oFatura"
+                      width={80}
+                      height={80}
+                      className="w-20 h-20 object-contain"
+                    />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="h-16 bg-gray-100 rounded"></div>
@@ -397,8 +409,13 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <FileText className="w-6 h-6 text-primary" />
-                <span className="text-xl font-bold">oFatura</span>
+                <Image
+                  src="/ofatura/oFatura.png"
+                  alt="oFatura"
+                  width={120}
+                  height={32}
+                  className="h-8 w-auto brightness-150"
+                />
               </div>
               <p className="text-gray-400">
                 Profesyonel e-arşiv fatura yönetim sistemi

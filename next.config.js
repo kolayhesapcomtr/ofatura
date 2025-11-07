@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
+  basePath: '/ofatura',
   images: {
     unoptimized: true,
   },

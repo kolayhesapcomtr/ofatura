@@ -25,8 +25,8 @@ export default function Home() {
                 src="/ofatura/oFatura.png"
                 alt="oFatura Logo"
                 width={240}
-                height={64}
-                className="h-16 w-auto"
+                height={77}
+                className="w-60 h-auto"
               />
             </div>
             <nav className="hidden md:flex space-x-8">

@@ -410,11 +410,11 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Image
-                  src="/ofatura/oFatura.png"
+                  src="/ofatura/footer-logo.png"
                   alt="oFatura"
-                  width={120}
-                  height={32}
-                  className="h-8 w-auto brightness-150"
+                  width={240}
+                  height={77}
+                  className="w-60 h-auto"
                 />
               </div>
               <p className="text-gray-400">

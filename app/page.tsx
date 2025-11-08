@@ -451,16 +451,10 @@ export default function Home() {
       {/* Contact Section */}
       <section id="iletisim" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">İletişim</h2>
-            <p className="text-xl text-gray-600">
-              Sorularınız için bize ulaşın
-            </p>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-gray-50 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Bize Ulaşın</h3>
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -520,9 +514,14 @@ export default function Home() {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
-              {/* Firma */}
-              <div className="flex items-start space-x-4">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">İletişim</h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Sorularınız için bize ulaşın
+              </p>
+              <div className="space-y-8">
+                {/* Firma */}
+                <div className="flex items-start space-x-4">
                 <div className="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Building2 className="w-6 h-6 text-primary" />
                 </div>
@@ -577,6 +576,7 @@ export default function Home() {
                     Çivril / Denizli
                   </p>
                 </div>
+              </div>
               </div>
             </div>
           </div>

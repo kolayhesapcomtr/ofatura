@@ -515,7 +515,7 @@ export default function Home() {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">İletişim</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">İletişim Bilgileri</h2>
               <p className="text-xl text-gray-600 mb-8">
                 Sorularınız için bize ulaşın
               </p>

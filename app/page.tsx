@@ -464,7 +464,7 @@ export default function Home() {
                 <Building2 className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Firma</h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-base">
                 Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti.
               </p>
             </div>

@@ -458,51 +458,115 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building2 className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Firma</h3>
-              <p className="text-gray-600 text-base">
-                Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti.
-              </p>
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div className="bg-gray-50 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Bize Ulaşın</h3>
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    Ad Soyad
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                    placeholder="Adınız ve soyadınız"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    E-posta
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                    placeholder="ornek@email.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    Mesajınız
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition resize-none"
+                    placeholder="Mesajınızı buraya yazın..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition shadow-lg"
+                >
+                  Gönder
+                </button>
+              </form>
             </div>
 
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-8 h-8 text-primary" />
+            {/* Contact Information */}
+            <div className="space-y-8">
+              {/* Firma */}
+              <div className="flex items-start space-x-4">
+                <div className="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Building2 className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Firma</h3>
+                  <p className="text-gray-600">
+                    Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">E-posta</h3>
-              <a href="mailto:destek@ofatura.com" className="text-primary hover:underline">
-                destek@ofatura.com
-              </a>
-            </div>
 
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-8 h-8 text-primary" />
+              {/* E-posta */}
+              <div className="flex items-start space-x-4">
+                <div className="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">E-posta</h3>
+                  <a href="mailto:destek@ofatura.com" className="text-primary hover:underline">
+                    destek@ofatura.com
+                  </a>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefon</h3>
-              <div className="space-y-2">
-                <a href="tel:+908503035154" className="text-primary hover:underline block">
-                  0850 303 51 54
-                </a>
-                <a href="tel:+905468772620" className="text-primary hover:underline block">
-                  0546 877 26 20
-                </a>
-              </div>
-            </div>
 
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-primary" />
+              {/* Telefon */}
+              <div className="flex items-start space-x-4">
+                <div className="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Telefon</h3>
+                  <div className="space-y-1">
+                    <a href="tel:+908503035154" className="text-primary hover:underline block">
+                      0850 303 51 54
+                    </a>
+                    <a href="tel:+905468772620" className="text-primary hover:underline block">
+                      0546 877 26 20
+                    </a>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Adres</h3>
-              <p className="text-gray-600">
-                Çıtak Mah. Kayalı Sok. No:24<br />
-                Çivril / Denizli
-              </p>
+
+              {/* Adres */}
+              <div className="flex items-start space-x-4">
+                <div className="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Adres</h3>
+                  <p className="text-gray-600">
+                    Çıtak Mah. Kayalı Sok. No:24<br />
+                    Çivril / Denizli
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

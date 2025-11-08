@@ -23,6 +23,46 @@ import {
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [formStatus, setFormStatus] = useState<{
+    type: 'idle' | 'loading' | 'success' | 'error';
+    message: string;
+  }>({ type: 'idle', message: '' });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormStatus({ type: 'loading', message: '' });
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const templateParams = {
+      from_name: formData.get('name') as string,
+      from_email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+      message: formData.get('message') as string,
+    };
+
+    try {
+      // @ts-ignore - EmailJS is loaded via CDN
+      await window.emailjs.send(
+        'ofatura',
+        'ofatura_template',
+        templateParams,
+        'mIkaTy0mIaJ3WRNHT'
+      );
+      setFormStatus({
+        type: 'success',
+        message: 'Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.',
+      });
+      form.reset();
+    } catch (error) {
+      setFormStatus({
+        type: 'error',
+        message: 'Mesaj gönderilemedi. Lütfen tekrar deneyin veya telefon ile iletişime geçin.',
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -455,7 +495,7 @@ export default function Home() {
             {/* Contact Form */}
             <div className="bg-gray-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Bize Ulaşın</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Ad Soyad
@@ -464,6 +504,7 @@ export default function Home() {
                     type="text"
                     id="name"
                     name="name"
+                    required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
                     placeholder="Adınız ve soyadınız"
                   />
@@ -476,6 +517,7 @@ export default function Home() {
                     type="email"
                     id="email"
                     name="email"
+                    required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
                     placeholder="ornek@email.com"
                   />
@@ -500,15 +542,30 @@ export default function Home() {
                     id="message"
                     name="message"
                     rows={5}
+                    required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition resize-none"
                     placeholder="Mesajınızı buraya yazın..."
                   ></textarea>
                 </div>
+
+                {/* Status Messages */}
+                {formStatus.type === 'success' && (
+                  <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
+                    {formStatus.message}
+                  </div>
+                )}
+                {formStatus.type === 'error' && (
+                  <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
+                    {formStatus.message}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition shadow-lg"
+                  disabled={formStatus.type === 'loading'}
+                  className="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Gönder
+                  {formStatus.type === 'loading' ? 'Gönderiliyor...' : 'Gönder'}
                 </button>
               </form>
             </div>

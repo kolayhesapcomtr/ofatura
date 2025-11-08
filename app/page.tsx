@@ -473,9 +473,14 @@ export default function Home() {
                 <Phone className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefon</h3>
-              <a href="tel:+908501234567" className="text-primary hover:underline">
-                0850 123 45 67
-              </a>
+              <div className="space-y-2">
+                <a href="tel:+908503035154" className="text-primary hover:underline block">
+                  0850 303 51 54
+                </a>
+                <a href="tel:+905468772620" className="text-primary hover:underline block">
+                  0546 877 26 20
+                </a>
+              </div>
             </div>
 
             <div className="text-center">
@@ -484,7 +489,8 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Adres</h3>
               <p className="text-gray-600">
-                İstanbul, Türkiye
+                Çıtak Mah. Kayalı Sok. No:24<br />
+                Çivril / Denizli
               </p>
             </div>
           </div>

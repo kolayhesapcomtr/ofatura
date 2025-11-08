@@ -7,15 +7,26 @@ export default function KVKK() {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link href="/" className="flex items-center space-x-3">
-            <Image
-              src="/ofatura/oFatura.png"
-              alt="oFatura Logo"
-              width={240}
-              height={77}
-              className="w-60 h-auto"
-            />
-          </Link>
+          <div className="flex justify-between items-center">
+            {/* Logo */}
+            <Link href="/" className="flex items-center space-x-3">
+              <Image
+                src="/ofatura/oFatura.png"
+                alt="oFatura Logo"
+                width={240}
+                height={77}
+                className="w-60 h-auto"
+              />
+            </Link>
+
+            {/* Navigation */}
+            <nav className="hidden md:flex space-x-8">
+              <Link href="/" className="text-gray-700 hover:text-primary transition">Anasayfa</Link>
+              <Link href="/#ozellikler" className="text-gray-700 hover:text-primary transition">Özellikler</Link>
+              <Link href="/#paketler" className="text-gray-700 hover:text-primary transition">Fiyatlar</Link>
+              <Link href="/#iletisim" className="text-gray-700 hover:text-primary transition">İletişim</Link>
+            </nav>
+          </div>
         </div>
       </header>
 

@@ -114,7 +114,7 @@ export default function KullanimSartlari() {
 
             <h2>6. Fikri Mülkiyet Hakları</h2>
             <ul>
-              <li>oFatura platformu, logosu, tasarımı ve kaynak kodu Kolay Hesap Bilgi Teknolojileri Ltd. Şti.'ye aittir</li>
+              <li>oFatura platformu, logosu, tasarımı ve kaynak kodu Kolay Hesap Bilgi Teknolojileri Ltd. Şti.&apos;ye aittir</li>
               <li>Kullanıcılar, sadece hizmeti kullanma hakkına sahiptir</li>
               <li>Platform kodunu kopyalama, değiştirme veya tersine mühendislik yapma yasaktır</li>
               <li>Oluşturduğunuz fatura verileri size aittir</li>
@@ -152,7 +152,7 @@ export default function KullanimSartlari() {
             </p>
 
             <h2>9. Hesap Askıya Alma ve Sonlandırma</h2>
-            <h3>9.1. oFatura'nın Hakları</h3>
+            <h3>9.1. oFatura&apos;nın Hakları</h3>
             <p>Aşağıdaki durumlarda hesabınızı askıya alabilir veya sonlandırabiliriz:</p>
             <ul>
               <li>Kullanım şartlarını ihlal etmeniz</li>

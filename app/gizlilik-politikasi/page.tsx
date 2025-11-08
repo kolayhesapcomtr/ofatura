@@ -35,7 +35,7 @@ export default function GizlilikPolitikasi() {
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 prose prose-lg max-w-none">
             <h2>1. Giriş</h2>
             <p>
-              Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti. ("oFatura") olarak,
+              Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti. (&quot;oFatura&quot;) olarak,
               kullanıcılarımızın gizliliğini korumayı ve kişisel verilerini güvenli bir şekilde işlemeyi
               taahhüt ediyoruz. Bu Gizlilik Politikası, oFatura hizmetlerini kullanırken toplanan,
               işlenen ve saklanan kişisel verileriniz hakkında sizi bilgilendirmek amacıyla hazırlanmıştır.

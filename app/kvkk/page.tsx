@@ -44,7 +44,7 @@ export default function KVKK() {
 
             <h2>2. Kişisel Verilerin Hangi Amaçla İşleneceği</h2>
             <p>
-              6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz
+              6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) uyarınca, kişisel verileriniz
               aşağıdaki amaçlarla işlenmektedir:
             </p>
 
@@ -129,7 +129,7 @@ export default function KVKK() {
             </ul>
 
             <h3>5.2. Hukuki Sebepler</h3>
-            <p>Kişisel verileriniz KVKK'nın 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:</p>
+            <p>Kişisel verileriniz KVKK&apos;nın 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:</p>
             <ul>
               <li>Açık rızanızın bulunması</li>
               <li>Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması</li>
@@ -139,14 +139,14 @@ export default function KVKK() {
             </ul>
 
             <h2>6. KVKK Kapsamındaki Haklarınız</h2>
-            <p>KVKK'nın 11. maddesi uyarınca veri sahibi olarak aşağıdaki haklara sahipsiniz:</p>
+            <p>KVKK&apos;nın 11. maddesi uyarınca veri sahibi olarak aşağıdaki haklara sahipsiniz:</p>
             <ul>
               <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme,</li>
               <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,</li>
               <li>Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
               <li>Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme,</li>
               <li>Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,</li>
-              <li>KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme,</li>
+              <li>KVKK&apos;nın 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme,</li>
               <li>Düzeltme, silme ve yok edilme işlemlerinin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
               <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,</li>
               <li>Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme.</li>
@@ -160,7 +160,7 @@ export default function KVKK() {
 
             <h3>7.1. Yazılı Başvuru</h3>
             <p>
-              İmzalı başvuru dilekçenizi "Çıtak Mah. Kayalı Sok. No:24, Çivril / Denizli" adresine
+              İmzalı başvuru dilekçenizi &quot;Çıtak Mah. Kayalı Sok. No:24, Çivril / Denizli&quot; adresine
               elden teslim edebilir veya noter aracılığıyla gönderebilirsiniz.
             </p>
 

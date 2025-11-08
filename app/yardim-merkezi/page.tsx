@@ -43,7 +43,7 @@ export default function YardimMerkezi() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Başlangıç Kılavuzu</h3>
               <p className="text-gray-600 mb-4">
-                oFatura'ya ilk kez mi başlıyorsunuz? Hızlı başlangıç kılavuzumuzu inceleyin.
+                oFatura&apos;ya ilk kez mi başlıyorsunuz? Hızlı başlangıç kılavuzumuzu inceleyin.
               </p>
             </div>
 
@@ -80,15 +80,15 @@ export default function YardimMerkezi() {
                   Nasıl fatura oluşturabilirim?
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Fatura oluşturmak için panel ana sayfasından "Yeni Fatura" butonuna tıklayın.
+                  Fatura oluşturmak için panel ana sayfasından &quot;Yeni Fatura&quot; butonuna tıklayın.
                   Açılan formda müşteri bilgilerini, ürün/hizmet detaylarını ve tutar bilgilerini doldurun.
                 </p>
                 <ol className="list-decimal list-inside text-gray-600 space-y-2 ml-4">
                   <li>Müşteri bilgilerini seçin veya yeni müşteri ekleyin</li>
                   <li>Ürün/hizmet satırlarını ekleyin</li>
                   <li>Vergi ve iskonto bilgilerini girin</li>
-                  <li>"Fatura Oluştur" butonuna tıklayın</li>
-                  <li>Sistem otomatik olarak faturanızı GİB'e gönderecektir</li>
+                  <li>&quot;Fatura Oluştur&quot; butonuna tıklayın</li>
+                  <li>Sistem otomatik olarak faturanızı GİB&apos;e gönderecektir</li>
                 </ol>
               </div>
 
@@ -103,7 +103,7 @@ export default function YardimMerkezi() {
                 </p>
                 <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
                   <li>Fatura oluştururken müşteri e-posta adresini belirtin</li>
-                  <li>"E-posta ile gönder" seçeneğini işaretleyin</li>
+                  <li>&quot;E-posta ile gönder&quot; seçeneğini işaretleyin</li>
                   <li>Sistem otomatik olarak PDF formatında faturayı müşterinize gönderecektir</li>
                   <li>Gönderim durumunu fatura detay sayfasından takip edebilirsiniz</li>
                 </ul>
@@ -185,7 +185,7 @@ export default function YardimMerkezi() {
                 className="bg-white text-primary border-2 border-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition inline-flex items-center justify-center"
               >
                 <HelpCircle className="w-5 h-5 mr-2" />
-                SSS'lere Göz Atın
+                SSS&apos;lere Göz Atın
               </Link>
             </div>
           </div>

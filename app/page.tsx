@@ -17,7 +17,8 @@ import {
   Menu,
   X,
   Infinity,
-  Smartphone
+  Smartphone,
+  Building2
 } from "lucide-react";
 
 export default function Home() {
@@ -452,15 +453,22 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">İletişim</h2>
-            <p className="text-lg font-semibold text-gray-800 mb-2">
-              Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti.
-            </p>
             <p className="text-xl text-gray-600">
               Sorularınız için bize ulaşın
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building2 className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Firma</h3>
+              <p className="text-gray-600 text-sm">
+                Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti.
+              </p>
+            </div>
+
             <div className="text-center">
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-8 h-8 text-primary" />

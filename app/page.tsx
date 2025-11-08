@@ -261,16 +261,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="text-white">
-              <div className="text-5xl font-bold mb-2">10,000+</div>
+              <div className="text-5xl font-bold mb-2">500+</div>
               <div className="text-primary-100 text-lg">Aktif Kullanıcı</div>
             </div>
             <div className="text-white">
-              <div className="text-5xl font-bold mb-2">1M+</div>
-              <div className="text-primary-100 text-lg">Gönderilen Fatura</div>
+              <div className="text-5xl font-bold mb-2">10.000+</div>
+              <div className="text-primary-100 text-lg">Gönderilen fatura</div>
             </div>
             <div className="text-white">
-              <div className="text-5xl font-bold mb-2">99.9%</div>
-              <div className="text-primary-100 text-lg">Sistem Uptime</div>
+              <div className="text-5xl font-bold mb-2">%99,99</div>
+              <div className="text-primary-100 text-lg">Erişilebilirlik</div>
             </div>
           </div>
         </div>

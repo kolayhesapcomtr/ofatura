@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import {
   FileText,
@@ -671,18 +672,18 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Destek</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">Yardım Merkezi</a></li>
+                <li><Link href="/yardim-merkezi" className="hover:text-white transition">Yardım Merkezi</Link></li>
                 <li><a href="#iletisim" className="hover:text-white transition">İletişim</a></li>
-                <li><a href="#" className="hover:text-white transition">SSS</a></li>
+                <li><Link href="/sss" className="hover:text-white transition">SSS</Link></li>
               </ul>
             </div>
 
             <div>
               <h4 className="font-semibold mb-4">Yasal</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">Gizlilik Politikası</a></li>
-                <li><a href="#" className="hover:text-white transition">Kullanım Şartları</a></li>
-                <li><a href="#" className="hover:text-white transition">KVKK</a></li>
+                <li><Link href="/gizlilik-politikasi" className="hover:text-white transition">Gizlilik Politikası</Link></li>
+                <li><Link href="/kullanim-sartlari" className="hover:text-white transition">Kullanım Şartları</Link></li>
+                <li><Link href="/kvkk" className="hover:text-white transition">KVKK</Link></li>
               </ul>
             </div>
           </div>

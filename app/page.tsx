@@ -576,7 +576,7 @@ export default function Home() {
               <p className="text-xl text-gray-600 mb-8">
                 Sorularınız için bize ulaşın
               </p>
-              <div className="space-y-8">
+              <div className="space-y-12">
                 {/* Firma */}
                 <div className="flex items-start space-x-4">
                 <div className="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">

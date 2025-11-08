@@ -15,7 +15,9 @@ import {
   Phone,
   MapPin,
   Menu,
-  X
+  X,
+  Infinity,
+  Smartphone
 } from "lucide-react";
 
 export default function Home() {
@@ -194,24 +196,24 @@ export default function Home() {
             {/* Feature 2 */}
             <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
               <div className="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">GİB Onaylı</h3>
-              <p className="text-gray-600">
-                Gelir İdaresi Başkanlığı entegrasyonu ile yasal uyumlu
-                ve güvenli fatura yönetimi.
-              </p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
-              <div className="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
                 <FileText className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Kolay Fatura Oluşturma</h3>
               <p className="text-gray-600">
                 Sezgisel arayüz ile saniyeler içinde fatura oluşturun.
                 Şablon kaydetme ve toplu fatura özellikleri.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
+              <div className="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                <Infinity className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Sınırsız Fatura Oluşturma</h3>
+              <p className="text-gray-600">
+                Ücretli paketlerde sınırsız fatura oluşturun.
+                İşletmeniz büyüdükçe sistemimiz yanınızda.
               </p>
             </div>
 
@@ -242,12 +244,12 @@ export default function Home() {
             {/* Feature 6 */}
             <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
               <div className="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-                <HeadphonesIcon className="w-7 h-7 text-primary" />
+                <Smartphone className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">7/24 Destek</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Tüm Cihazlardan Kullanım</h3>
               <p className="text-gray-600">
-                Türkçe destek ekibimiz her zaman yanınızda.
-                Canlı destek, e-posta ve telefon desteği.
+                Bilgisayar, tablet veya telefonunuzdan istediğiniz zaman erişin.
+                Responsive tasarım ile her cihazda mükemmel deneyim.
               </p>
             </div>
           </div>

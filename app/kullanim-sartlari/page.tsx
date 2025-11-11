@@ -92,8 +92,8 @@ export default function KullanimSartlari() {
             <h3>4.1. Paket Türleri</h3>
             <ul>
               <li><strong>Ücretsiz Plan:</strong> Ayda 5 fatura, temel özellikler</li>
-              <li><strong>Aylık Plan:</strong> ₺250/ay, sınırsız fatura, tüm özellikler</li>
-              <li><strong>Yıllık Plan:</strong> ₺1.500/yıl, %50 indirimli, tüm özellikler</li>
+              <li><strong>Aylık Plan:</strong> ₺125/ay, sınırsız fatura, tüm özellikler</li>
+              <li><strong>Yıllık Plan:</strong> ₺750/yıl, %50 indirimli, tüm özellikler</li>
             </ul>
 
             <h3>4.2. Ödeme Koşulları</h3>

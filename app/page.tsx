@@ -367,7 +367,7 @@ export default function Home() {
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Aylık</h3>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">₺250</span>
+                <span className="text-4xl font-bold text-gray-900">₺125</span>
                 <span className="text-gray-600">/ay</span>
               </div>
               <ul className="space-y-4 mb-8">
@@ -421,11 +421,11 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Yıllık</h3>
               <div className="mb-6">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-bold text-primary">₺1.500</span>
+                  <span className="text-4xl font-bold text-primary">₺750</span>
                   <span className="text-gray-600">/yıl</span>
                 </div>
                 <div className="text-sm text-gray-500 mt-1">
-                  Aylık <span className="line-through">₺250</span> → <span className="text-green-600 font-semibold">₺125</span>
+                  Aylık <span className="line-through">₺125</span> → <span className="text-green-600 font-semibold">₺62,50</span>
                 </div>
               </div>
               <ul className="space-y-4 mb-8">

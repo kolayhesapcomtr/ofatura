@@ -15,7 +15,7 @@ export default function SSS() {
     },
     {
       question: "Ücretsiz plan ile ne kadar fatura oluşturabilirim?",
-      answer: "Ücretsiz planımız ile ayda 5 adet fatura oluşturabilirsiniz. Bu plan, yeni başlayan küçük işletmeler ve sistemi test etmek isteyenler için idealdir. Daha fazla faturaya ihtiyacınız varsa Aylık (₺250) veya Yıllık (₺1.500) paketlerimize geçebilirsiniz."
+      answer: "Ücretsiz planımız ile ayda 5 adet fatura oluşturabilirsiniz. Bu plan, yeni başlayan küçük işletmeler ve sistemi test etmek isteyenler için idealdir. Daha fazla faturaya ihtiyacınız varsa Aylık (₺125) veya Yıllık (₺750) paketlerimize geçebilirsiniz."
     },
     {
       question: "GİB entegrasyonu güvenli mi?",
@@ -23,7 +23,7 @@ export default function SSS() {
     },
     {
       question: "Yıllık pakette indirim var mı?",
-      answer: "Evet! Yıllık paket seçtiğinizde %50 indirim kazanırsınız. Aylık ₺250 olan fiyat yerine yıllık ₺1.500 ödeyerek (aylık ₺125'e denk gelir) önemli bir tasarruf sağlarsınız."
+      answer: "Evet! Yıllık paket seçtiğinizde %50 indirim kazanırsınız. Aylık ₺125 olan fiyat yerine yıllık ₺750 ödeyerek (aylık ₺62,50'ye denk gelir) önemli bir tasarruf sağlarsınız."
     },
     {
       question: "E-posta ile fatura gönderimi nedir?",

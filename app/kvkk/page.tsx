@@ -1,5 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "KVKK Aydınlatma Metni - oFatura",
+  description: "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında kişisel verilerinizin işlenmesi hakkında aydınlatma metni.",
+  keywords: "KVKK, kişisel verilerin korunması, aydınlatma metni, veri sorumlusu, KVKK hakları",
+  openGraph: {
+    title: "KVKK Aydınlatma Metni - oFatura",
+    description: "Kişisel Verilerin Korunması Kanunu kapsamında bilgilendirme.",
+  },
+};
 
 export default function KVKK() {
   return (

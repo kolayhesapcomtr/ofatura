@@ -1,5 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gizlilik Politikası - oFatura",
+  description: "oFatura gizlilik politikası. Kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında detaylı bilgi.",
+  keywords: "gizlilik politikası, veri güvenliği, kişisel veri koruma, KVKK, oFatura gizlilik",
+  openGraph: {
+    title: "Gizlilik Politikası - oFatura",
+    description: "Kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında detaylı bilgi.",
+  },
+};
 
 export default function GizlilikPolitikasi() {
   return (

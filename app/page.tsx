@@ -64,8 +64,83 @@ export default function Home() {
     }
   };
 
+  // Structured Data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kolayhesapcomtr.github.io/ofatura/#organization",
+        "name": "oFatura",
+        "legalName": "Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti.",
+        "url": "https://kolayhesapcomtr.github.io/ofatura",
+        "logo": "https://kolayhesapcomtr.github.io/ofatura/oFatura.png",
+        "description": "Profesyonel e-arşiv fatura yönetim sistemi",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Çıtak Mah. Kayalı Sok. No:24",
+          "addressLocality": "Çivril",
+          "addressRegion": "Denizli",
+          "addressCountry": "TR"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+90-850-303-51-54",
+          "contactType": "customer service",
+          "email": "destek@ofatura.com",
+          "availableLanguage": "Turkish"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://kolayhesapcomtr.github.io/ofatura/#website",
+        "url": "https://kolayhesapcomtr.github.io/ofatura",
+        "name": "oFatura",
+        "description": "E-Arşiv Fatura Yönetim Sistemi",
+        "publisher": {
+          "@id": "https://kolayhesapcomtr.github.io/ofatura/#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "oFatura",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Ücretsiz Plan",
+            "price": "0",
+            "priceCurrency": "TRY",
+            "description": "Ayda 5 fatura, temel özellikler"
+          },
+          {
+            "@type": "Offer",
+            "name": "Aylık Plan",
+            "price": "125",
+            "priceCurrency": "TRY",
+            "description": "Sınırsız fatura, tüm özellikler"
+          },
+          {
+            "@type": "Offer",
+            "name": "Yıllık Plan",
+            "price": "750",
+            "priceCurrency": "TRY",
+            "description": "Sınırsız fatura, tüm özellikler, %50 indirim"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">

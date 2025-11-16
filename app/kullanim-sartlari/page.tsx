@@ -1,5 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kullanım Şartları - oFatura",
+  description: "oFatura kullanım şartları ve koşulları. Hizmet kapsamı, kullanıcı sorumlulukları, paket ücretlendirme ve yasal düzenlemeler.",
+  keywords: "kullanım şartları, hizmet koşulları, kullanıcı sözleşmesi, oFatura şartlar, yasal bilgiler",
+  openGraph: {
+    title: "Kullanım Şartları - oFatura",
+    description: "oFatura kullanım şartları ve koşulları. Hizmet kapsamı ve kullanıcı sorumlulukları.",
+  },
+};
 
 export default function KullanimSartlari() {
   return (

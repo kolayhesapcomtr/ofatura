@@ -70,11 +70,11 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://kolayhesapcomtr.github.io/ofatura/#organization",
+        "@id": "https://www.ofatura.com/#organization",
         "name": "oFatura",
         "legalName": "Kolay Hesap Bilgi Teknolojileri ve Aracılık Hizmetleri Ltd. Şti.",
-        "url": "https://kolayhesapcomtr.github.io/ofatura",
-        "logo": "https://kolayhesapcomtr.github.io/ofatura/oFatura.png",
+        "url": "https://www.ofatura.com",
+        "logo": "https://www.ofatura.com/oFatura.png",
         "description": "Profesyonel e-arşiv fatura yönetim sistemi",
         "address": {
           "@type": "PostalAddress",
@@ -93,12 +93,12 @@ export default function Home() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://kolayhesapcomtr.github.io/ofatura/#website",
-        "url": "https://kolayhesapcomtr.github.io/ofatura",
+        "@id": "https://www.ofatura.com/#website",
+        "url": "https://www.ofatura.com",
         "name": "oFatura",
         "description": "E-Arşiv Fatura Yönetim Sistemi",
         "publisher": {
-          "@id": "https://kolayhesapcomtr.github.io/ofatura/#organization"
+          "@id": "https://www.ofatura.com/#organization"
         }
       },
       {
@@ -148,7 +148,7 @@ export default function Home() {
             {/* Logo */}
             <a href="#" className="flex items-center space-x-3">
               <Image
-                src="/ofatura/oFatura.png"
+                src="/oFatura.png"
                 alt="oFatura Logo"
                 width={240}
                 height={77}
@@ -268,7 +268,7 @@ export default function Home() {
                   <div className="h-4 bg-gray-200 rounded w-1/2"></div>
                   <div className="h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg flex items-center justify-center p-4">
                     <Image
-                      src="/ofatura/icon-oFatura.png"
+                      src="/icon-oFatura.png"
                       alt="oFatura"
                       width={80}
                       height={80}
@@ -723,7 +723,7 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Image
-                  src="/ofatura/footer-logo.png"
+                  src="/footer-logo.png"
                   alt="oFatura"
                   width={240}
                   height={77}

@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "oFatura - E-Arşiv Fatura Yönetim Sistemi",
@@ -12,20 +9,20 @@ export const metadata: Metadata = {
   authors: [{ name: "Kolay Hesap Bilgi Teknolojileri Ltd. Şti." }],
   creator: "oFatura",
   publisher: "oFatura",
-  metadataBase: new URL('https://kolayhesapcomtr.github.io/ofatura'),
+  metadataBase: new URL('https://www.ofatura.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    url: 'https://kolayhesapcomtr.github.io/ofatura',
+    url: 'https://www.ofatura.com',
     title: 'oFatura - E-Arşiv Fatura Yönetim Sistemi',
     description: 'Profesyonel e-arşiv fatura yönetim sistemi. Kolay kullanım, hızlı entegrasyon ve güvenilir hizmet. Aylık ₺125\'den başlayan paketler.',
     siteName: 'oFatura',
     images: [
       {
-        url: '/ofatura/oFatura.png',
+        url: '/oFatura.png',
         width: 1200,
         height: 630,
         alt: 'oFatura - E-Arşiv Fatura Yönetim Sistemi',
@@ -36,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'oFatura - E-Arşiv Fatura Yönetim Sistemi',
     description: 'Profesyonel e-arşiv fatura yönetim sistemi. Kolay kullanım, hızlı entegrasyon ve güvenilir hizmet.',
-    images: ['/ofatura/oFatura.png'],
+    images: ['/oFatura.png'],
   },
   robots: {
     index: true,
@@ -50,8 +47,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/ofatura/icon-oFatura.png",
-    apple: "/ofatura/icon-oFatura.png",
+    icon: "/icon-oFatura.png",
+    apple: "/icon-oFatura.png",
   },
 };
 
@@ -68,7 +65,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

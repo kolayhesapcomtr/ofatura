@@ -165,12 +165,12 @@ export default function Home() {
                 <a href="#iletisim" className="text-gray-700 hover:text-primary transition">İletişim</a>
               </nav>
               <div className="flex items-center space-x-4">
-                <button className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-2 rounded-lg font-medium transition">
+                <a href="https://earsiv.ofatura.com/login" className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-2 rounded-lg font-medium transition">
                   Giriş Yap
-                </button>
-                <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
+                </a>
+                <a href="https://earsiv.ofatura.com/register" className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
                   Kayıt Ol
-                </button>
+                </a>
               </div>
             </div>
 
@@ -216,12 +216,12 @@ export default function Home() {
                   İletişim
                 </a>
                 <div className="flex flex-col space-y-3 pt-4">
-                  <button className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-2 rounded-lg font-medium transition">
+                  <a href="https://earsiv.ofatura.com/login" className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-2 rounded-lg font-medium transition text-center">
                     Giriş Yap
-                  </button>
-                  <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
+                  </a>
+                  <a href="https://earsiv.ofatura.com/register" className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition text-center">
                     Kayıt Ol
-                  </button>
+                  </a>
                 </div>
               </nav>
             </div>
@@ -243,10 +243,10 @@ export default function Home() {
                 GİB entegrasyonu ile güvenli ve hızlı fatura yönetimi.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-600 transition shadow-lg">
+                <a href="https://earsiv.ofatura.com/login" className="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-600 transition shadow-lg text-center">
                   Ücretsiz Dene
-                </button>
-                <button className="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition">
+                </a>
+                <button className="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition cursor-not-allowed opacity-50" disabled>
                   Demo İzle
                 </button>
               </div>
@@ -433,9 +433,9 @@ export default function Home() {
                   <span className="text-gray-600">PDF/ZIP İndirme</span>
                 </li>
               </ul>
-              <button className="w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+              <a href="https://earsiv.ofatura.com/login" className="block w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition text-center">
                 Ücretsiz Başla
-              </button>
+              </a>
             </div>
 
             {/* Monthly Package */}
@@ -483,9 +483,9 @@ export default function Home() {
                   <span className="text-gray-600">Logo ve Kaşe/İmza Ekleme</span>
                 </li>
               </ul>
-              <button className="w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+              <a href="https://earsiv.ofatura.com/login" className="block w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition text-center">
                 Aylık Paketi Seç
-              </button>
+              </a>
             </div>
 
             {/* Yearly Package */}
@@ -541,9 +541,9 @@ export default function Home() {
                   <span className="text-gray-600">Logo ve Kaşe/İmza Ekleme</span>
                 </li>
               </ul>
-              <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-600 transition">
+              <a href="https://earsiv.ofatura.com/login" className="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-600 transition text-center">
                 Yıllık Paketi Seç
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -558,9 +558,9 @@ export default function Home() {
           <p className="text-xl text-primary-100 mb-8">
             Aylık 5 fatura ile ücretsiz kullanın. Kredi kartı gerektirmez, kurulum yok.
           </p>
-          <button className="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition shadow-xl">
+          <a href="https://earsiv.ofatura.com/register" className="inline-block bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition shadow-xl">
             Ücretsiz Hesap Oluştur
-          </button>
+          </a>
         </div>
       </section>
 

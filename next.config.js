@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: '/ofatura',
+  // basePath: '/ofatura', // GitHub Pages için - kendi domain'de kullanılmaz
   images: {
     unoptimized: true,
   },

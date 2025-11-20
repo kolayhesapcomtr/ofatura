@@ -39,12 +39,12 @@ export default function GizlilikPolitikasi() {
                 <Link href="/#iletisim" className="text-gray-700 hover:text-primary transition">İletişim</Link>
               </nav>
               <div className="flex items-center space-x-4">
-                <button className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-2 rounded-lg font-medium transition">
+                <a href="https://earsiv.ofatura.com/login" className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-2 rounded-lg font-medium transition">
                   Giriş Yap
-                </button>
-                <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
+                </a>
+                <a href="https://earsiv.ofatura.com/register" className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition">
                   Kayıt Ol
-                </button>
+                </a>
               </div>
             </div>
           </div>

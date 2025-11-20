@@ -12,7 +12,7 @@ export default function YardimMerkezi() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3">
               <Image
-                src="/ofatura/oFatura.png"
+                src="/oFatura.png"
                 alt="oFatura Logo"
                 width={240}
                 height={77}
